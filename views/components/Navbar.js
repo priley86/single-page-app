@@ -38,7 +38,7 @@ const Navbar = {
   },
   postRender: async () => {
     document.getElementById("log-in").addEventListener("click", async (e) => {
-      e.preventDefault();
+      e.preventDefault(); 
       await window.auth0Client.loginWithRedirect();
     });
 
